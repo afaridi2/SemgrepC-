@@ -7,6 +7,8 @@ rules:
         - https://www.usenix.org/legacy/events/sec02/full_papers/chen/chen.pdf
         - https://g.co/kgs/PCHQjJ
         - https://github.com/struct/mms
+        cwe:
+        - "CWE-696: Improper Handling of System or Network State"
       confidence: MEDIUM
     message: >-
       A compromised process might be able to regain elevated group privileges
