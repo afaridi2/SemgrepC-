@@ -4,6 +4,8 @@ rules:
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://linux.die.net/man/3/sprintf
+      cwe:
+        - "CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')"
       confidence: MEDIUM
       # NOTE: vsprintf() and vsnprintf() are not covered.
       # NOTE: memcpy() and its variants are not covered.
