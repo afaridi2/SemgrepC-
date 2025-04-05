@@ -5,6 +5,9 @@ rules:
       references:
         - https://cwe.mitre.org/data/definitions/242
         - https://cwe.mitre.org/data/definitions/120
+        cwe:
+        - "CWE-242: Use of Inherently Dangerous Function"
+         - "CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')"
       confidence: HIGH
       # NOTE: see also cpp.strings.unbounded-copy-to-stack-buffer.unbounded-copy-to-stack-buffer.
     message: >-
