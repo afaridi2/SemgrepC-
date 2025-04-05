@@ -5,6 +5,8 @@ rules:
       references:
         - https://cwe.mitre.org/data/definitions/367
         - https://g.co/kgs/PCHQjJ
+      cwe:
+        - "CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition"
       confidence: HIGH
       # NOTE: see also cpp.filesystem.file-access-before-action.file-access-before-action
       # and cpp.filesystem.file-stat-before-action.file-stat-before-action.
