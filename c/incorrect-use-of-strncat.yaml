@@ -6,6 +6,9 @@ rules:
         - https://cwe.mitre.org/data/definitions/787
         - https://cwe.mitre.org/data/definitions/193
         - https://g.co/kgs/PCHQjJ
+      cwe:
+        - "CWE-787: Out-of-bounds Write"
+        - "CWE-193: Off-by-one Error"
       confidence: HIGH
     message: >-
       The strncat() function is nearly as dangerous as strcat(), in that it's
