@@ -6,6 +6,8 @@ rules:
         - https://cwe.mitre.org/data/definitions/806
         - https://github.com/0xdea/advisories/blob/master/2020-07-solaris-whodo-w.txt
         - https://dustri.org/b/playing-with-weggli.html
+      cwe:
+        - "CWE-806: Buffer Access Using Size of a Source Buffer"
       confidence: MEDIUM
       # NOTE: some copy functions such as snprintf() and memcpy() are not covered.
       # NOTE: strlen() before the copy function is not covered.
