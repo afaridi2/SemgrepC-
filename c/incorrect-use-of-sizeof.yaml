@@ -7,6 +7,8 @@ rules:
         - https://g.co/kgs/PCHQjJ
         - https://github.com/struct/mms
         - https://dustri.org/b/playing-with-weggli.html
+      cwe:
+        - "CWE-467: Use of sizeof() on a Pointer Type"
       confidence: MEDIUM
       # NOTE: another relevant pattern would be sizeof('...'), but 
       # unfortunately that's currently not supported by Semgrep.
