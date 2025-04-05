@@ -5,6 +5,10 @@ rules:
       references:
         - https://lkml.org/lkml/2009/11/11/336
         - https://bugs.mysql.com/bug.php?id=23181
+        cwe:
+        - "CWE-476: NULL Pointer Dereference"
+         - "CWE-588: Case Sensitivity "
+         - "CWE-590: Free of Memory not on the Heap"
       confidence: HIGH
       # NOTE: see also cpp.correctness.memset-removal.memset-removal for
       # a different potential flaw involving memset().
