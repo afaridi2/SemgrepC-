@@ -7,6 +7,10 @@ rules:
         - https://cwe.mitre.org/data/definitions/120
         - https://cwe.mitre.org/data/definitions/787
         - https://g.co/kgs/PCHQjJ
+      cwe:
+        - "CWE-676: Use of Potentially Dangerous Function"
+         - "CWE-120: Buffer Copy without Checking Size of Input"
+          - "CWE-787: Out-of-bounds Write"
       confidence: HIGH
       # NOTE: see also cpp.strings.unbounded-copy-to-stack-buffer.unbounded-copy-to-stack-buffer.
     message: >-
