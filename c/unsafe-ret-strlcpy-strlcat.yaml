@@ -5,6 +5,10 @@ rules:
       references:
         - https://lwn.net/Articles/507319/
         - https://g.co/kgs/PCHQjJ
+      cwe:
+        - "CWE-120: Buffer Copy without Checking Size of Input"
+         - "CWE-787: Out-of-bounds Write"
+
       confidence: MEDIUM
     message: >-
       The strlcpy() and strlcat() functions return the total length of the
