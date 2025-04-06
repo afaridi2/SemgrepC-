@@ -5,6 +5,8 @@ rules:
       references:
         - https://cwe.mitre.org/data/definitions/121
         - https://github.com/googleprojectzero/weggli
+        cwe:
+        - "CWE-121: Stack-based Buffer Overflow"
       confidence: MEDIUM
       # NOTE: some functions (e.g., scanf family) and some other ways to
       # write into a stack buffer are not covered.
