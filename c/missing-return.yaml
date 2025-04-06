@@ -5,6 +5,9 @@ rules:
       references:
         - https://cwe.mitre.org/data/definitions/393
         - https://cwe.mitre.org/data/definitions/394
+      cwe:
+        - "CWE-393: Return of Wrong Status Code"
+         - "CWE-394: Unexpected Status Code or Return Value"
       confidence: LOW
       # NOTE: function declarations in the form type func() are
       # not supported to avoid false positives due to current 
