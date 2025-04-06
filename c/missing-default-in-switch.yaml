@@ -7,6 +7,8 @@ rules:
         - https://g.co/kgs/PCHQjJ
         - https://github.com/struct/mms
         - https://github.com/returntocorp/semgrep/issues/4939
+      cwe:
+        - "CWE-478: Missing Default Case in Switch Statement"
       confidence: LOW
     message: >-
       The code does not have a default case in an expression with multiple
