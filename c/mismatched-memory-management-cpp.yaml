@@ -7,6 +7,9 @@ rules:
         - https://cwe.mitre.org/data/definitions/590
         - https://github.com/struct/mms
         - https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples
+       cwe:
+        - "CWE-762: Mismatched Memory Management Routines"
+         - "CWE-590: Free of Memory Not on the Heap"
       confidence: LOW
       # NOTE: valloc(), reallocf(), aligned_alloc(), and custom wrappers
       # are not covered.
