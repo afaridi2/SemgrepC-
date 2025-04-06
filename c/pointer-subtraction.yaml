@@ -5,6 +5,8 @@ rules:
       references:
         - https://cwe.mitre.org/data/definitions/469
         - https://github.com/struct/mms
+        cwe:
+        - "CWE-469: Use of Pointer Subtraction"
       confidence: MEDIUM
     message: >-
       The software subtracts one pointer from another in order to determine
