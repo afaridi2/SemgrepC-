@@ -9,6 +9,11 @@ rules:
         - https://cwe.mitre.org/data/definitions/483
         - https://g.co/kgs/PCHQjJ
         - https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf
+      cwe:
+        - "CWE-480: Use of Incorrect Operator"
+         - "CWE-481:Assigning the Value of a Variable of One Type to a Variable of Another Type"
+          - "CWE-482: Consumer Data Integrity"
+         - "CWE-483:Using Externally-Controlled Format String"
       confidence: LOW
       # NOTE: common issues with comments are not covered.
       # NOTE: consider adding a focus-metavariable where applicable.
