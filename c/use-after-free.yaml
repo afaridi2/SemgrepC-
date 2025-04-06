@@ -7,6 +7,8 @@ rules:
         - https://github.com/struct/mms
         - https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf
         - https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples
+      cwe:
+        - "CWE-416: Use After Free"
       confidence: MEDIUM
       # NOTE: C++ delete and delete[] operators are not covered.
       # NOTE: realloc() is not covered.
