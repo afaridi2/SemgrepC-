@@ -6,6 +6,9 @@ rules:
         - https://cwe.mitre.org/data/definitions/686
         - https://cwe.mitre.org/data/definitions/562
         - https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf
+      cwe:
+        - "CWE-686: Function Pointer Dereference"
+         - "CWE-562: Return of Stack Variable Address"
       confidence: LOW
       # NOTE: static variables matching apparently is not supported by Semgrep.
       # NOTE: multiple pointer assignments and other ways to persist after 
