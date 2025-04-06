@@ -7,6 +7,9 @@ rules:
         - https://cwe.mitre.org/data/definitions/126
         - https://g.co/kgs/PCHQjJ
         - https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf
+      cwe:
+        - "CWE-170: Improper Null Termination"
+         - "CWE-126: Buffer Over-read"
       confidence: MEDIUM
     # NOTE: other functions that do not NUL-terminate the destination
     # buffer are not covered (e.g., read(), readlink(), fread(), 
