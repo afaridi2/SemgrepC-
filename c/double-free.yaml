@@ -1,5 +1,5 @@
 rules:
-  - id: raptor-double-free
+  - id: raptor-double-free-v2
     metadata:
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       cwe:
