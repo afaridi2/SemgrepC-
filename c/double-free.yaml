@@ -2,7 +2,6 @@ rules:
   - id: raptor-double-free
     metadata:
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
-     
       cwe:
         - "CWE-415: Double Free"
       confidence: MEDIUM
