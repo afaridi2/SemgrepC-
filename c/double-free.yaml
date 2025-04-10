@@ -4,6 +4,7 @@ rules:
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       cwe:
         - "CWE-415: Double Free"
+      cwe_description: "Double free vulnerability occurs when the free() function is called more than once with the same memory address."
       confidence: MEDIUM
       # NOTE: C++ delete and delete[] operators are not covered.
       # NOTE: realloc() is not covered.
