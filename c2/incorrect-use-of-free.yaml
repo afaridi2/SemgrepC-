@@ -1,11 +1,17 @@
-rules:
+afaridi2rules:
   - id: raptor-incorrect-use-of-free
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/590
         - https://github.com/shellphish/how2heap/blob/master/glibc_2.23/house_of_spirit.c
-      confidence: MEDIUM
+      cwe:
+        - "CWE-590: Free of Memory not on the Heap"
+	confidence: MEDIUM
       # NOTE: this rule only covers free() called on stack-allocated
       # buffers; it does not cover other instances of free() called on
       # non-heap-allocated buffers; it also does not cover alloca() 

@@ -1,13 +1,19 @@
 rules:
   - id: raptor-incorrect-order-setuid-setgid-etc
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/696
         - https://www.usenix.org/legacy/events/sec02/full_papers/chen/chen.pdf
         - https://g.co/kgs/PCHQjJ
         - https://github.com/struct/mms
-      confidence: MEDIUM
+     cwe:
+        - "CWE-696: Improper Handling of System or Network State"
+       confidence: MEDIUM
     message: >-
       A compromised process might be able to regain elevated group privileges
       if set(e)gid() is called after set(e)uid(). A similar case is when 

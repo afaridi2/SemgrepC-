@@ -1,6 +1,10 @@
 rules:
   - id: raptor-incorrect-use-of-sprintf-snprintf
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://linux.die.net/man/3/sprintf

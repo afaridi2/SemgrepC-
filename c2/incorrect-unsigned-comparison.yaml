@@ -1,11 +1,17 @@
 rules:
   - id: raptor-incorrect-unsigned-comparison
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/697
         - https://g.co/kgs/PCHQjJ
-      confidence: HIGH
+     cwe:
+        - "CWE-697: Improper Handling of Dynamic Objects"
+	 confidence: HIGH
       # NOTE: some types are not covered.
       # NOTE: incorrect unsigned assigments are not covered.
     message: >-
