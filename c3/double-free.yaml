@@ -2,7 +2,6 @@ rules:
   - id: raptor-double-free-v2
     metadata:
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
-<<<<<<< HEAD
       references:
         - https://cwe.mitre.org/data/definitions/415
         - https://github.com/struct/mms
@@ -10,11 +9,7 @@ rules:
         - https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples
         - https://dustri.org/b/playing-with-weggli.html
        cwe:
-=======
-      cwe:
->>>>>>> e6f26f2c689cee63f1d6af570834ae76ce72c9b6
-        id: CWE-415
-        name: Double Free
+	 - "CWE-415: Double Free"
       confidence: MEDIUM
       # NOTE: C++ delete and delete[] operators are not covered.
       # NOTE: realloc() is not covered.
