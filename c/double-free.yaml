@@ -1,10 +1,10 @@
 rules:
   - id: raptor-double-free
     metadata:
-      author: Farid
+      author: Marco Ivaldi <raptor@0xdeadbeef.info>
       cwe:
-        - "CWE-415: Double Free"
-      cwe_description: "Double free vulnerability occurs when the free() function is called more than once with the same memory address."
+        id: CWE-415
+        name: Double Free
       confidence: MEDIUM
       # NOTE: C++ delete and delete[] operators are not covered.
       # NOTE: realloc() is not covered.
