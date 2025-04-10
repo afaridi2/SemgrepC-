@@ -1,7 +1,7 @@
 rules:
   - id: raptor-double-free
     metadata:
-      author: Marco Ivaldi <raptor@0xdeadbeef.info>
+      author: Farid
       cwe:
         - "CWE-415: Double Free"
       cwe_description: "Double free vulnerability occurs when the free() function is called more than once with the same memory address."
