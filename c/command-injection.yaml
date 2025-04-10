@@ -8,7 +8,7 @@ rules:
         - https://cwe.mitre.org/data/definitions/88
         - https://g.co/kgs/PCHQjJ
         - https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf
-      cwe:
+       cwe:
         - "CWE-676: Use of Potentially Dangerous Function"
         - "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
         - "CWE-88: Argument Injection or Modification "
