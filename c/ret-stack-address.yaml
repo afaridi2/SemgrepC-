@@ -8,6 +8,8 @@ rules:
         - https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf
         - https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples
         - https://rules.sonarsource.com/c/type/Bug/RSPEC-946
+      cwe:
+         - "CWE-562: Return of Stack Variable Address"
       confidence: LOW
       # NOTE: static variables matching apparently is not supported by Semgrep.
       # NOTE: multiple pointer assignments and other ways to persist after 

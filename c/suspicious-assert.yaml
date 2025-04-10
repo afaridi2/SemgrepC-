@@ -5,6 +5,9 @@ rules:
       references:
         - https://legends2k.github.io/note/assert_vs_if/
         - https://github.com/struct/mms
+       cwe:
+        - "CWE-617: Trusting Inputs"
+         - "CWE-571: Expression Is Always False"
       confidence: MEDIUM
       # NOTE: other kinds of assertion macros (e.g., REQUIRE, DCHECK,
       # ENSURE, etc.) are not covered.

@@ -5,6 +5,9 @@ rules:
       references:
         - https://cwe.mitre.org/data/definitions/377
         - https://cwe.mitre.org/data/definitions/367
+       cwe:
+        - "CWE-377: Insecure Temporary File"
+        - "CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition"
       confidence: HIGH
     message: >-
       Creating and using insecure temporary files can leave application and

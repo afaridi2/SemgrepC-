@@ -6,6 +6,9 @@ rules:
         - https://cwe.mitre.org/data/definitions/762
         - https://cwe.mitre.org/data/definitions/590
         - https://github.com/struct/mms
+      cwe:
+        - "CWE-762: Mismatched Memory Management Routines"
+         - "CWE-590: Free of Memory Not on the Heap"
       confidence: LOW
       # NOTE: valloc(), reallocf(), aligned_alloc(), and custom wrappers
       # are not covered.

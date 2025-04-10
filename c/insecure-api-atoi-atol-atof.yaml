@@ -5,6 +5,9 @@ rules:
       references:
         - https://rules.sonarsource.com/c/type/Bug/RSPEC-989
         - https://wiki.sei.cmu.edu/confluence/display/c/ERR34-C.+Detect+errors+when+converting+a+string+to+a+number
+       cwe:
+        - "CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"
+         - "CWE-253: Incorrect Check of Function Return Value"
       confidence: HIGH
       # NOTE: some function variants are missing.
     message: >-

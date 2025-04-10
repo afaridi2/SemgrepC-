@@ -8,6 +8,9 @@ rules:
         - https://g.co/kgs/PCHQjJ
         - https://github.com/struct/mms
         - https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf
+       cwe:
+        - "CWE-252: Unchecked Return Value"
+         - "CWE-690: Unchecked Call to a Standard Library Function"
       confidence: MEDIUM
       # NOTE: custom wrappers are not covered.
     message: >-

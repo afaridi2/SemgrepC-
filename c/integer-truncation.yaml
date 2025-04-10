@@ -7,6 +7,9 @@ rules:
         - https://cwe.mitre.org/data/definitions/681
         - https://g.co/kgs/PCHQjJ
         - https://github.com/struct/mms
+      cwe:
+        - "CWE-197: Numeric Truncation Error"
+         - "CWE-681: Incorrect Conversion between Numeric Types"
       confidence: MEDIUM
       # NOTE: the deep expression operator is necessary to catch some
       # matches because C/C++ integer promotions do not seem entirely
