@@ -1,5 +1,5 @@
 rules:
-  - id: raptor-double-free
+  - id: raptor-double-free-v2
     metadata:
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
@@ -8,6 +8,9 @@ rules:
         - https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf
         - https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples
         - https://dustri.org/b/playing-with-weggli.html
+       cwe:
+        id: CWE-415
+        name: Double Free
       confidence: MEDIUM
       # NOTE: C++ delete and delete[] operators are not covered.
       # NOTE: realloc() is not covered.
