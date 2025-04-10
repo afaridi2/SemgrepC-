@@ -1,5 +1,5 @@
 rules:
-  - id: raptor-format-string-bugs
+  - id: raptor-format-string-bugs-v2
     metadata:
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
@@ -8,6 +8,8 @@ rules:
         - http://phrack.org/issues/70/13.html#article
         - https://g.co/kgs/PCHQjJ
         - https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf
+      cwe:
+        - "CWE-134: Use of Externally-Controlled Format String"
       confidence: MEDIUM
       # NOTE: generic va_list matching for custom functions is not covered.
       # NOTE: see also cpp.format-string.*.
