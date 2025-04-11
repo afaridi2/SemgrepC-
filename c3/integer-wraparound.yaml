@@ -1,6 +1,10 @@
 rules:
   - id: raptor-integer-wraparound
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/190
@@ -10,10 +14,6 @@ rules:
         - http://www.phrack.org/issues/60/10.html#article
         - https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples
         - https://dustri.org/b/playing-with-weggli.html
-      cwe:
-        - "CWE-190: Integer Overflow or Wraparound"
-         - "CWE-128: Wrap-around Error"
-          - "CWE-131: Incorrect Calculation of Buffer Size"
       confidence: LOW
       # NOTE: only multiplication and sum with two operands are covered; other 
       # arithmetic operations should also be considered (e.g., left shift), as 

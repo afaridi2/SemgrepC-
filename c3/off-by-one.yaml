@@ -1,15 +1,16 @@
 rules:
   - id: raptor-off-by-one
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/193
         - https://cwe.mitre.org/data/definitions/787
         - https://g.co/kgs/PCHQjJ
         - https://github.com/struct/mms
-      cwe:
-        - "CWE-193: Off-by-one Error"
-         - "CWE-787: Out-of-bounds Write"
       confidence: MEDIUM
       # NOTE: heap-allocated buffers and some functions are not covered.
       # NOTE: memcpy(dst + 1, p, len) and similar scenarios are not covered.

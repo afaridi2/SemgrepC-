@@ -1,6 +1,10 @@
 rules:
   - id: raptor-unchecked-ret-malloc-calloc-realloc
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/252
@@ -8,9 +12,6 @@ rules:
         - https://g.co/kgs/PCHQjJ
         - https://github.com/struct/mms
         - https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf
-       cwe:
-        - "CWE-252: Unchecked Return Value"
-         - "CWE-690: Unchecked Call to a Standard Library Function"
       confidence: MEDIUM
       # NOTE: custom wrappers are not covered.
     message: >-

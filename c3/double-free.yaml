@@ -1,6 +1,10 @@
 rules:
-  - id: raptor-double-free-v2
+  - id: raptor-double-free
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/415
@@ -8,8 +12,8 @@ rules:
         - https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf
         - https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples
         - https://dustri.org/b/playing-with-weggli.html
-       cwe:
-	 - "CWE-415: Double Free"
+      cwe:
+        - "CWE-415: double free"
       confidence: MEDIUM
       # NOTE: C++ delete and delete[] operators are not covered.
       # NOTE: realloc() is not covered.

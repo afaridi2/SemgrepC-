@@ -1,13 +1,14 @@
 rules:
   - id: raptor-insecure-api-gets
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/242
         - https://cwe.mitre.org/data/definitions/120
-        cwe:
-        - "CWE-242: Use of Inherently Dangerous Function"
-         - "CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')"
       confidence: HIGH
       # NOTE: see also cpp.strings.unbounded-copy-to-stack-buffer.unbounded-copy-to-stack-buffer.
     message: >-

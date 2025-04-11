@@ -1,14 +1,16 @@
 rules:
   - id: raptor-unchecked-ret-setuid-seteuid
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/252
         - https://lwn.net/Articles/451985/
         - https://www.usenix.org/legacy/events/sec02/full_papers/chen/chen.pdf
         - https://www.openwall.com/lists/oss-security/2023/12/30/4
-      cwe:
-        - "CWE-252: Unchecked Return Value"
       confidence: MEDIUM
     message: >-
       The software does not check the return value from a method or

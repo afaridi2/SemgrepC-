@@ -1,14 +1,16 @@
 rules:
   - id: raptor-incorrect-use-of-sizeof
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/467
         - https://g.co/kgs/PCHQjJ
         - https://github.com/struct/mms
         - https://dustri.org/b/playing-with-weggli.html
-      cwe:
-        - "CWE-467: Use of sizeof() on a Pointer Type"
       confidence: MEDIUM
       # NOTE: another relevant pattern would be sizeof('...'), but 
       # unfortunately that's currently not supported by Semgrep.

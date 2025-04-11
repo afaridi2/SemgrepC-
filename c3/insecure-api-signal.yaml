@@ -1,15 +1,15 @@
 rules:
   - id: raptor-insecure-api-signal
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/364
         - https://cwe.mitre.org/data/definitions/479
         - https://cwe.mitre.org/data/definitions/828
-       cwe:
-        - "CWE-364: Signal Handler Race Condition"
-         - "CWE-479: Signal Handler Safety"
-          - "CWE-828: Access to a Memory Location After End of Buffer"
       confidence: HIGH
     message: >-
       The signal() API should be regarded as deprecated. When possible,

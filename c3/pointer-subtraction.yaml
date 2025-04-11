@@ -1,12 +1,14 @@
 rules:
   - id: raptor-pointer-subtraction
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/469
         - https://github.com/struct/mms
-        cwe:
-        - "CWE-469: Use of Pointer Subtraction"
       confidence: MEDIUM
     message: >-
       The software subtracts one pointer from another in order to determine

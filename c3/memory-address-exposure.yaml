@@ -1,16 +1,16 @@
 rules:
   - id: raptor-memory-address-exposure
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/200
         - https://cwe.mitre.org/data/definitions/209
         - https://cwe.mitre.org/data/definitions/497
         - https://github.com/struct/mms
-      cwe:
-        - "CWE-200: Exposure of Sensitive Information to an Unauthorized Actor"
-         - "CWE-209: Generation of Error Message Containing Sensitive Information"
-          - "CWE-497: Exposure of System Data to an Unauthorized Control Sphere"
       confidence: LOW
     message: >-
       The software generates an error message that includes sensitive

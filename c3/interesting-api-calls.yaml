@@ -1,6 +1,10 @@
 rules:
   - id: raptor-interesting-api-calls
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://github.com/0xdea/ghidra-scripts/blob/main/Rhabdomancer.java
@@ -8,10 +12,6 @@ rules:
         - https://g.co/kgs/PCHQjJ
         - https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf
         - https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/28719-banned-api-usage-use-updated-function-replacement
-      cwe:
-        - "CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"
-         - "CWE-200: Exposure of Sensitive Information to an Unauthorized Actor"
-          - "CWE-131: Incorrect Calculation of Buffer SizeCWE-284: Improper Access Control"
       confidence: MEDIUM
       # NOTE: goto, try/catch, sem/mutex, new/delete, static_cast/reinterpret_cast 
       # are not covered.

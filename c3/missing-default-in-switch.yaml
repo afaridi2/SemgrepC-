@@ -1,14 +1,16 @@
 rules:
   - id: raptor-missing-default-in-switch
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/478
         - https://g.co/kgs/PCHQjJ
         - https://github.com/struct/mms
         - https://github.com/returntocorp/semgrep/issues/4939
-      cwe:
-        - "CWE-478: Missing Default Case in Switch Statement"
       confidence: LOW
     message: >-
       The code does not have a default case in an expression with multiple

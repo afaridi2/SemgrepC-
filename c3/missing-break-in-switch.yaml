@@ -1,14 +1,16 @@
 rules:
   - id: raptor-missing-break-in-switch
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/484
         - https://g.co/kgs/PCHQjJ
         - https://github.com/struct/mms
         - https://github.com/returntocorp/semgrep/issues/4939
-      cwe:
-        - "CWE-484: Omission of Security-relevant Information"
       confidence: LOW
       # NOTE: we should also check for default blocks that miss the
       # break/return/exit/goto or equivalent statement/function call.

@@ -1,14 +1,15 @@
 rules:
   - id: raptor-unsafe-strlen
     metadata:
+    cwe:
+      - "CWE-676: Use of Potentially Dangerous Function"
+      - "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+      - "CWE-88: Argument Injection or Modification"
       author: Marco Ivaldi <raptor@0xdeadbeef.info>
       references:
         - https://cwe.mitre.org/data/definitions/190
         - https://cwe.mitre.org/data/definitions/680
         - https://github.com/struct/mms
-      cwe:
-        - "CWE-190: Integer Overflow or Wraparound"
-         - "CWE-680: Improper Handling of Inconsistent Returns from Functions"
       confidence: MEDIUM
     message: >-
       The software performs a calculation that can produce an integer
